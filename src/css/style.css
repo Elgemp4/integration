@@ -32,7 +32,7 @@
 }
 
 body{
-  @apply font-sans h-screen flex flex-col md:flex-row;
+  @apply font-sans h-screen flex flex-col md:flex-row text-gray-700;
 }
 
 .header{
@@ -73,4 +73,24 @@ body{
 
 .reservation-form-submit{
   @apply bg-tasty-red text-white p-4 rounded-md hover:cursor-pointer hover:bg-tasty-darkred transition-colors;
+}
+
+.rock-title{
+  @apply font-rock font-extrabold text-2xl mb-16;
+}
+
+.food-title{
+  @apply text-2xl italic font-bold mt-12;
+}
+
+.food-title-dot{
+  @apply text-tasty-red;
+}
+
+.food-subtitle{
+  @apply font-bold text-xl mb-2;
+}
+
+.food-item{
+  @apply grid grid-cols-[1fr_2rem];
 }
