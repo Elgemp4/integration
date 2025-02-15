@@ -20,7 +20,8 @@
 
 @theme{
   --color-tasty-black: #202020;
-  --color-tatsy-red: #FF7660;
+  --color-tasty-red: #FF7660;
+  --color-tasty-darkred: #FF5545;
 
   --breakpoint-*: initial;
   --breakpoint-md: 768px;
@@ -30,16 +31,46 @@
   --default-transition-duration: .5s;
 }
 
+body{
+  @apply font-sans h-screen flex flex-col md:flex-row;
+}
+
 .header{
   @apply bg-tasty-black text-white gap-6 flex flex-col items-center py-6 md:pl-8 md:pr-16 md:justify-end md:items-start;
-
-  
 }
 
 .header-logo{
-  @apply flex flex-col text-5xl hover:text-tatsy-red transition-colors font-extrabold font-rock;
+  @apply flex flex-col text-5xl hover:text-tasty-red transition-colors font-extrabold font-rock;
 }
 
 .header-subtitle{
   @apply text-gray-500;
+}
+
+.header-nav{
+  @apply flex flex-col items-center md:items-start;
+}
+
+.header-nav-link{
+  @apply hover:text-tasty-red transition-colors;
+}
+
+.menu-video{
+  @apply h-full object-cover aspect-auto;
+}
+
+.reservation-title{
+  @apply font-bold text-2xl py-4;
+}
+
+.reservation-form{
+  @apply flex flex-col mt-4 gap-3;
+}
+
+.reservation-form-input{
+  @apply rounded-sm text-gray-600 p-4 border-gray-200 border-[1px] outline-gray-950 outline-0 focus-visible:outline-1 focus-visible:outline-gray-800;
+}
+
+.reservation-form-submit{
+  @apply bg-tasty-red text-white p-4 rounded-md hover:cursor-pointer hover:bg-tasty-darkred transition-colors;
 }

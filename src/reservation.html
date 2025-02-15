@@ -8,39 +8,26 @@
     <title>Reservation</title>
   </head>
   <body>
-    <body class="font-sans h-screen flex flex-col md:flex-row">
-      <header
-        class="bg-tasty-black text-white gap-6 flex flex-col items-center py-6 md:pl-8 md:pr-16 md:justify-end md:items-start"
-      >
-        <a
-          href="/"
-          class="flex flex-col text-5xl hover:text-tatsy-red transition-colors"
-        >
-          <h1 class="font-rock font-extrabold">Tasty</h1>
-          <h1 class="font-rock font-extrabold">Goods</h1>
+    <body>
+      <header class="header">
+        <a href="/" class="header-logo">
+          <h1>Tasty</h1>
+          <h1>Goods</h1>
         </a>
-        <h2 class="text-gray-500">Asian Soups Restaurant</h2>
+        <h2 class="header-subtitle">Asian Soups Restaurant</h2>
         <nav>
-          <ul class="flex flex-col items-center md:items-start">
+          <ul class="header-nav">
             <li>
-              <a class="hover:text-tatsy-red transition-colors" href="/"
-                >Home</a
-              >
+              <a class="header-nav-link" href="/">Home</a>
             </li>
             <li>
-              <a class="hover:text-tatsy-red transition-colors" href="/foods"
-                >Foods</a
-              >
+              <a class="header-nav-link" href="/foods">Foods</a>
             </li>
             <li>
-              <a class="hover:text-tatsy-red transition-colors" href="/gallery"
-                >Gallery</a
-              >
+              <a class="header-nav-link" href="/gallery">Gallery</a>
             </li>
             <li>
-              <a
-                class="hover:text-tatsy-red transition-colors"
-                href="/reservation"
+              <a class="header-nav-link" href="/reservation"
                 >Make A Reservation</a
               >
             </li>
@@ -50,32 +37,28 @@
       <main
         class="px-4 pt-16 md:pl-24 md:pt-16 flex flex-col grow max-w-[800px]"
       >
-        <h2 class="font-bold text-2xl py-4">Please fill out the form below</h2>
+        <h2 class="reservation-title">Please fill out the form below</h2>
         <p>
           Let us know when you'd like to book a reservation and we'll contact
           you within 30min to confirm or find another time.
         </p>
-        <form class="flex flex-col mt-4 gap-3" id="reservation_form">
+        <form class="reservation-form" id="reservation_form">
           <input
             id="name_input"
             placeholder="Your Name"
-            class="rounded-sm text-gray-600 p-4 border-gray-200 border-[1px] outline-gray-950 outline-0 focus-visible:outline-1 focus-visible:outline-gray-800"
+            class="reservation-form-input"
           />
           <input
             id="email_input"
             placeholder="Your Email"
-            class="rounded-sm text-gray-600 p-4 border-gray-200 border-[1px] outline-0 focus-visible:outline-1 focus-visible:outline-gray-800"
+            class="reservation-form-input"
           />
           <textarea
             id="when_area"
-            class="rounded-sm text-gray-600 p-4 border-gray-200 border-[1px] outline-0 focus-visible:outline-1 focus-visible:outline-gray-800"
+            class="reservation-form-input"
             placeholder="When would you like to book a reservation ?"
           ></textarea>
-          <button
-            class="bg-tatsy-red text-white p-4 rounded-md hover:cursor-pointer"
-          >
-            Send
-          </button>
+          <button class="reservation-form-submit">Send</button>
         </form>
       </main>
     </body>
