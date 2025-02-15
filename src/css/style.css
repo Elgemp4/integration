@@ -88,9 +88,17 @@ body{
 }
 
 .food-subtitle{
-  @apply font-bold text-xl mb-2;
+  @apply font-bold text-xl mb-2 mt-8;
 }
 
 .food-item{
   @apply grid grid-cols-[1fr_2rem];
+}
+
+.gallery-photo{
+  @apply object-cover;
+}
+
+.gallery-btn{
+  @apply text-white text-6xl absolute top-0 bottom-0 z-10 hover:cursor-pointer px-4;
 }

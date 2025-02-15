@@ -35,53 +35,43 @@
         </nav>
       </header>
       <main class="px-4 pt-16 md:pl-24 md:pt-16 flex flex-col grow">
-        <h2 class="font-rock font-extrabold text-2xl mb-16">Gallery</h2>
-        <div class="relative max-w-[700px]">
+        <h2 class="rock-title">Gallery</h2>
+        <div class="relative max-w-[700px] self-center">
           <div id="photo_gallery" class="flex overflow-hidden">
             <img
-              class="transition-all shrink object-cover"
+              class="transition-all shrink gallery-photo"
               id="first_photo"
               src="./assets/images/photo0.jpg"
               alt="Table with plates"
             />
             <img
-              class="object-cover"
+              class="gallery-photo"
               src="./assets/images/photo1.jpg"
               alt="Single plate on a table"
             />
             <img
-              class="object-cover"
+              class="gallery-photo"
               src="./assets/images/photo2.jpg"
               alt="Delicious food on a plate"
             />
             <img
-              class="object-cover"
+              class="gallery-photo"
               src="./assets/images/photo3.jpg"
               alt="Kitchen ustencils on a table"
             />
             <img
-              class="object-cover"
+              class="gallery-photo"
               src="./assets/images/photo4.jpg"
               alt="Picture of a kitchen with two marmits"
             />
             <img
-              class="object-cover"
+              class="gallery-photo"
               src="./assets/images/photo5.jpg"
               alt="Picture of a chef making a meal"
             />
           </div>
-          <button
-            id="left_button"
-            class="text-white text-6xl absolute top-0 bottom-0 left-0 z-10 hover:cursor-pointer"
-          >
-            &lt;
-          </button>
-          <button
-            id="right_button"
-            class="text-white text-6xl absolute top-0 bottom-0 right-0 z-10 hover:cursor-pointer"
-          >
-            &gt;
-          </button>
+          <button id="left_button" class="gallery-btn left-0">&lt;</button>
+          <button id="right_button" class="gallery-btn right-0">&gt;</button>
         </div>
       </main>
     </body>
