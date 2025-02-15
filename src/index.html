@@ -1,13 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <script defer type="module" src="/javascript/main.js"></script>
+    <title>Tasty Food</title>
   </head>
-  <body>
-    <h1>Index</h1>
-    <script type="module" src="/javascript/main.js"></script>
+  <body class="font-sans h-screen max-h-screen flex flex-col md:flex-row">
+    <header class="header">
+      <a href="/" class="header-logo">
+        <h1>Tasty</h1>
+        <h1>Goods</h1>
+      </a>
+      <h2 class="text-gray-500">Asian Soups Restaurant</h2>
+      <nav>
+        <ul class="flex flex-col items-center md:items-start">
+          <li>
+            <a class="hover:text-tatsy-red transition-colors" href="/">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-tatsy-red transition-colors" href="/foods"
+              >Foods</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-tatsy-red transition-colors" href="/gallery"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-tatsy-red transition-colors"
+              href="/reservation"
+              >Make A Reservation</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="overflow-hidden flex justify-center items-center grow">
+      <video
+        class="h-full object-cover aspect-auto"
+        src="./assets/SDVid.mp4"
+        autoplay
+        loop
+      ></video>
+    </main>
   </body>
 </html>

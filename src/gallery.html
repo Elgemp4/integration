@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="/javascript/main.js"></script>
+    <title>Gallery</title>
+  </head>
+  <body>
+    <body class="font-sans h-screen flex flex-col md:flex-row">
+      <header
+        class="bg-tasty-black text-white gap-6 flex flex-col items-center py-6 md:pl-8 md:pr-16 md:justify-end md:items-start"
+      >
+        <a
+          href="/"
+          class="flex flex-col text-5xl hover:text-tatsy-red transition-colors"
+        >
+          <h1 class="font-rock font-extrabold">Tasty</h1>
+          <h1 class="font-rock font-extrabold">Goods</h1>
+        </a>
+        <h2 class="text-gray-500">Asian Soups Restaurant</h2>
+        <nav>
+          <ul class="flex flex-col items-center md:items-start">
+            <li>
+              <a class="hover:text-tatsy-red transition-colors" href="/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tatsy-red transition-colors" href="/foods"
+                >Foods</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-tatsy-red transition-colors" href="/gallery"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-tatsy-red transition-colors"
+                href="/reservation"
+                >Make A Reservation</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="px-4 pt-16 md:pl-24 md:pt-16 flex flex-col grow">
+        <h2 class="font-rock font-extrabold text-2xl mb-16">Gallery</h2>
+        <div class="relative max-w-[700px]">
+          <div id="photo_gallery" class="flex overflow-hidden">
+            <img
+              class="transition-all shrink object-cover"
+              id="first_photo"
+              src="./assets/images/photo0.jpg"
+              alt="Table with plates"
+            />
+            <img
+              class="object-cover"
+              src="./assets/images/photo1.jpg"
+              alt="Single plate on a table"
+            />
+            <img
+              class="object-cover"
+              src="./assets/images/photo2.jpg"
+              alt="Delicious food on a plate"
+            />
+            <img
+              class="object-cover"
+              src="./assets/images/photo3.jpg"
+              alt="Kitchen ustencils on a table"
+            />
+            <img
+              class="object-cover"
+              src="./assets/images/photo4.jpg"
+              alt="Picture of a kitchen with two marmits"
+            />
+            <img
+              class="object-cover"
+              src="./assets/images/photo5.jpg"
+              alt="Picture of a chef making a meal"
+            />
+          </div>
+          <button
+            id="left_button"
+            class="text-white text-6xl absolute top-0 bottom-0 left-0 z-10 hover:cursor-pointer"
+          >
+            &lt;
+          </button>
+          <button
+            id="right_button"
+            class="text-white text-6xl absolute top-0 bottom-0 right-0 z-10 hover:cursor-pointer"
+          >
+            &gt;
+          </button>
+        </div>
+      </main>
+    </body>
+  </body>
+</html>
